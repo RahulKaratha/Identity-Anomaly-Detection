@@ -4,7 +4,7 @@ An advanced User and Entity Behavior Analytics (UEBA) system that detects accoun
 
 ## What it does
 
-This enterprise-grade security tool monitors user login activities and identifies account takeovers and security threats through advanced behavioral analysis. It specializes in detecting:
+This tool monitors user login activities and identifies account takeovers and security threats through advanced behavioral analysis. It specializes in detecting:
 
 - **Account takeovers**: Device + location changes with failed-then-success patterns
 - **Suspicious login patterns**: Night-time access, rapid logins, geographic anomalies
@@ -51,11 +51,12 @@ This enterprise-grade security tool monitors user login activities and identifie
    streamlit run dashboard/dashboard.py
    ```
    
-   **Dashboard Features:**
-   - **High-Risk Users Overview**: Risk timeline visualizations with hover tooltips
-   - **Individual User Deep-Dive**: Comprehensive behavioral analysis
-   - **Real-time Event Scorer**: Instant risk assessment for new events
-   - **Interactive Visualizations**: Plotly-powered charts with detailed explanations
+   **Enhanced Dashboard Features:**
+   - **UEBA Analytics**: Top 5 users with increasing risk trends, enhanced event details, dynamic scaling
+   - **Dashboard Overview**: Detection metrics, risk distribution charts, takeover detection summary
+   - **Real-time Scorer**: Dynamic risk scoring with comprehensive feature analysis
+   - **Alert Explorer**: Interactive filtering and investigation tools
+   - **User Investigation**: Complete event history with detailed behavioral analysis
 
 ## Enhanced Project Structure
 
@@ -117,23 +118,30 @@ This enterprise-grade security tool monitors user login activities and identifie
 
 ## Dashboard Capabilities
 
-### High-Risk Users Overview
-- **Risk Timeline**: Interactive time-series with hover details
-- **User Risk Profiles**: Comprehensive behavioral summaries
-- **Trend Visualization**: Risk progression over time
-- **Alert Prioritization**: Focus on highest-risk users
+### Enhanced UEBA Analytics
+- **Top 5 Increasing Risk Users**: Automatically identifies users with upward risk trends using linear regression
+- **Dynamic Scale Visualization**: Adaptive Y-axis scaling for better trend visibility
+- **Comprehensive Event Details**: Complete hover information with timestamps, countries, devices, IPs, and explanations
+- **Trend Line Analysis**: Mathematical slope calculations showing risk progression rates
+- **Interactive Risk Progression**: Color-coded markers by risk level with diamond highlights for high-risk events
 
-### Individual User Deep-Dive
-- **Behavioral Baselines**: Personal normal patterns
-- **Deviation Analysis**: Quantified behavioral changes
-- **Risk History**: Complete timeline of suspicious activities
-- **Recommendation Engine**: Automated risk assessments
+### Dashboard Overview
+- **Detection Metrics**: Takeover detection rates and percentage breakdowns
+- **Risk Distribution Charts**: Bar graphs showing low/medium/high alert distributions
+- **Key Performance Indicators**: Real-time metrics with detection percentages
+- **Takeover Detection Summary**: Specialized metrics for account compromise events
 
-### Real-Time Scoring
-- **Instant Risk Assessment**: Score new events in real-time
-- **Feature Breakdown**: Detailed explanation of risk factors
-- **Takeover Detection**: Specialized account compromise analysis
-- **Interactive Interface**: User-friendly event input
+### Real-Time Scorer (Enhanced)
+- **Dynamic Risk Scoring**: Adaptive model weighting based on feature patterns
+- **Comprehensive Risk Analysis**: Detailed breakdown of all 22 behavioral features
+- **Improved Feature Extraction**: Enhanced geographic, temporal, and behavioral analysis
+- **Interactive Risk Assessment**: Real-time scoring with detailed explanations
+
+### Individual User Analysis
+- **Complete Event History**: Full chronological event tables with all details
+- **Multi-Country/Device Tracking**: Geographic and device diversity metrics
+- **Risk Trend Calculations**: Mathematical trend analysis with slope indicators
+- **Event Detail Capture**: Comprehensive information including login success, explanations, and timestamps
 
 ## Performance Optimization
 
